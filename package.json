@@ -2,7 +2,7 @@
   "name": "static-server",
   "version": "1.0.0",
   "dependencies": {
-    "pad": "latest",
+    "pad": "1.2.1",
     "colors": "latest",
     "minimist": "latest",
     "express": "latest",
