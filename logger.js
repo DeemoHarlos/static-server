@@ -2,6 +2,8 @@
 
 const pad = require('pad')
 const colors = require('colors')
+const argv = require('minimist')(process.argv.slice(2))
+const domain = argv.d || 'deemo.space'
 
 function currentTime(){
 	var date = new Date(Date.now())
@@ -51,7 +53,7 @@ log.stat = {
 	'route':'/',
 	'premodel':'<div id="text"><div>',
 	'sufmodel':'</div></div>',
-	'200':'Welcome to deemo.space! OwO',
+	'200':'Welcome to ' + domain + '! OwO',
 	'400':'Bad Request. =_=',
 	'403':'Forbiden. O_O',
 	'404':'Not found. QAQ',
