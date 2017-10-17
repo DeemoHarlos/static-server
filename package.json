@@ -1,0 +1,27 @@
+{
+  "name": "static-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "pad": "latest",
+    "colors": "latest",
+    "minimist": "latest",
+    "express": "latest",
+    "body-parser": "latest"
+  },
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeemoHarlos/static-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeemoHarlos/static-server/issues"
+  },
+  "homepage": "https://github.com/DeemoHarlos/static-server#readme"
+}

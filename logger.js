@@ -75,7 +75,7 @@ log.stat = {
 			align-items:center;\n\
 			height:100%\n\
 		}\n\
-	</style>'
+		</style>'
 }
 
 log.welcome = function(req,res){
