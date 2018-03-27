@@ -15,7 +15,7 @@ app.enable('trust proxy')
 app.use((req,res,next)=>{
 	log.listenResEnd(req,res)
 	next()
-},static('../'))
+},static(argv._[0]||'./'))
 
 app.listen(port, ()=>{
 	log.printLog('info','Listening on port ' + (port+'').cyan)
