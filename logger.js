@@ -57,7 +57,9 @@ log.stat = {
 	'400':'Bad Request. =_=',
 	'403':'Forbiden. O_O',
 	'404':'Not found. QAQ',
+	'405':'Method not allowed ="=',
 	'500':'Server error. &lt;(ˋ^ˊ)&gt;',
+	'default':'',
 	'style':'<style>\n\
 		*{\n\
 			box-sizing:border-box;\n\
@@ -129,7 +131,7 @@ log.printRes = function(res){
 }
 
 log.response = function(res,status,obj){
-	var send = this.stat.premodel + status + ' ' + this.stat[status] + 
+	var send = this.stat.premodel + status + ' ' + (this.stat[status]||this.stat['default']) + 
 			this.stat.sufmodel + this.stat.style || obj
 	res.status(status).send(send)
 	res.end()
